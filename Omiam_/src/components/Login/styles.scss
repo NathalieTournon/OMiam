@@ -1,0 +1,68 @@
+@use './src/styles/vars';
+
+.login {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: vars.$grey-omiam ;
+  margin: 2rem auto;
+
+  &-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0;
+  }
+
+  &-label {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  &-input {
+    margin-top: 0.3rem;
+    display:block;
+    border-radius: 0.5rem;
+    border: 0.5px solid vars.$grey-omiam;
+    padding: 0.5rem;
+    width: 240px;
+
+    &::placeholder {
+      color: vars.$blue-omiam;
+      opacity: 0.5;
+    }
+  }
+
+  &-submit {
+    margin-top: 2rem;
+    font-family: 'font-title';
+    font-size: 1.5rem;
+    border: 0;
+    padding: 0rem 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px vars.$grey-omiam;
+    border-radius: 10px;
+    background-color: vars.$grey-omiam;
+  
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.error-message {
+  background-color: vars.$orange-omiam;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  line-height: 1.5rem;;
+}

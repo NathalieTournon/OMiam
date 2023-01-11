@@ -1,0 +1,119 @@
+@use '../../styles/vars';
+@media screen and (min-width: 720px) {
+  .createdRecipe input[type="text"], textarea#caption {
+    width: 70% !important;
+  }
+  .createdRecipe select, .ingredients input{
+    width: 25% !important;
+    margin: 1rem 0; 
+  }
+ .ingredient-list {
+    justify-content: space-around !important;;
+    margin: 2rem 0 !important;;
+    flex-direction: row !important;;
+    align-items: center !important;;
+    flex-direction: none !important;;
+  }
+  .createdRecipe select, .ingredients input {
+    margin: 1rem 1rem !important;
+    width: 90%!important;
+}
+}
+.createdRecipe i{
+  font-size: 3rem;
+}
+.illustration{
+  background: url('../../assets/img/illustration-kitchen.svg') no-repeat center;
+  height: 40vh;
+  left: -29rem;
+  margin: 2rem auto;
+  position: absolute;
+  top: 22rem;
+  width: 78%;
+  z-index: -1;
+}
+@media screen and (min-width: 1120px) {
+  .createdRecipe input[type="text"], textarea#caption {
+    width: 50%;
+  }
+}
+
+.createdRecipe input[type="text"], textarea#caption {
+  width: 90%;
+}
+.label-title {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.createdRecipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.ingredients{
+  &-type{
+    width: 30% !important;
+  }
+}
+ .createdRecipe textarea, .createdRecipe input[type="number"]{
+    width:90%; 
+}
+
+.createdRecipe select, .ingredients input{
+  width: 90% !important;
+  margin: 1rem 0; 
+}
+.ingredient-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  flex-direction: column;
+}
+.form-radio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+p textarea#caption {
+  font-style: italic;
+  opacity: 0.5;
+}
+.step {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  &>i.icon-add{
+    margin: 1rem 2rem 0;
+  }
+}
+button .icon-oven {
+  font-size: 5rem !important;
+}
+.ingredient-created-button {
+  background: #2a2a2a;
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: inline;
+  margin: 3rem;
+  font-weight: 700;
+  border-radius: vars.$raduis-img;
+}
+.createdRecipe-label{
+  border-bottom: 0.1rem solid vars.$grey-omiam;
+  margin: 4rem 0;
+  padding: 1rem;
+}
+
+.createdRecipe-label:last-child{
+  border-bottom: none;
+}
+
+.createdRecipe-label:first-child{
+  border-bottom: none;
+}

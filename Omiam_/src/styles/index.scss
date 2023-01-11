@@ -1,0 +1,97 @@
+@use 'reset';
+@use 'vars';
+@use 'fonts';
+@use 'icons';
+
+body{
+  text-align:center;
+  color: vars.$grey-omiam;
+  font-family: 'font-main';
+}
+h2, h1 {
+  font-family: 'font-title';
+}
+h1{
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+h2{
+  font-size: 2rem; 
+}
+.logo{
+  color:  vars.$blue-omiam;
+  &-slogan{
+    display: block;
+    font-size: 2rem;
+    margin: -1rem 0 0 0;
+    color: vars.$grey-omiam;
+  }
+  
+}
+input[type="text"], select, input.ingredients-type, .createdRecipe input[type=number] {
+  //width: 90%;
+  border-radius: vars.$raduis-img;
+  border: 0.5px solid vars.$grey-omiam;
+  padding: 0.5rem;
+
+}
+input[type="file"] {
+  // font-family: 'font-main';
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 0.5px solid vars.$grey-omiam;
+  padding: 0.5rem;
+}
+input[type="email"] {
+  // font-family: 'font-main';
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 0.5px solid vars.$grey-omiam;
+  padding: 0.5rem;
+}
+
+textarea {
+  // font-family: 'font-main';
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 0.5px solid vars.$grey-omiam;
+  padding: 0.5rem;
+  font-size: 1em !important;
+}
+
+select{
+  border: none;
+  border: 0.01rem solid vars.$grey-omiam;
+}
+::placeholder{
+  font-family: 'font-main';
+  font-size: 1rem;
+  padding: 0.1rem 0;
+  color: vars.$blue-omiam;
+  opacity: 0.5;
+}
+.createdRecipe>form {
+  width: 80%;
+}
+span.send-button-submit {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.send-button {
+  font-size: 5rem;
+  background: vars.$white;
+  padding: 0.5rem;
+  border: none;
+  color: vars.$blue-omiam;
+  cursor: pointer;
+  margin: 1rem;
+
+  &:hover .icon-oven:before {
+    content: "\e904";
+  }
+}
+.bold{
+  font-weight: 900;
+}
