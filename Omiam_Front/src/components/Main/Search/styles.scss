@@ -1,0 +1,13 @@
+@use './src/styles/vars';
+
+.list {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  &-categories {
+
+    &-icon {
+      font-size: 2.5rem;
+    }
+  }
+}

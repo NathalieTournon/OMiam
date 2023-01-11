@@ -1,0 +1,47 @@
+@use './src/styles/vars';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-family: 'font-title';
+  line-height: 1.8rem;
+  padding: 1rem;
+
+  &-title {
+    color: vars.$grey-omiam;
+    font-size: 4rem;
+  }
+
+  &-sloggan {
+    font-size: 1.5rem;
+    color: vars.$grey-omiam;
+
+    &-highlight{
+      color: vars.$orange-omiam;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'font-title';
+    line-height: 1.7rem;
+    padding: 0.8rem;
+  
+    &-title {
+      color: vars.$grey-omiam;
+      font-size: 3.4rem;
+    }
+  
+    &-sloggan {
+      font-size: 1.4rem;
+      color: vars.$grey-omiam;
+  
+      &-highlight{
+        color: vars.$orange-omiam;
+      }
+    }
+  }
+}
